@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Poppins','sans-serif';
+    @apply text-dark
+}
+
+p{
+    font-size: 16px;
+}
+
+.logo-cont{
+
+}
+
+.active{
+    @apply py-4 px-2 border-primary border-b-[5px]
+}
+
+.banner{
+    background: linear-gradient(90.36deg, #FFFFFF 25.1%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 99.73%),url('./img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards .card{
+    border-radius: 18px;
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+    @apply px-[2rem] 
+}
+
+/* .doctor-gray{
+    filter: grayscale(100%);
+}
+
+.doc-hov1{
+    opacity: 0;
+    bottom: 33px;
+    left: 265px;
+    transition: all .3s ease;
+}
+
+.doc-hov2{
+    opacity: 0;
+    bottom: 47px;
+    left: 549px;
+    transition: all .3s ease;
+}
+
+.doc-hov3{
+    opacity: 0;
+    bottom: 30px;
+    left: 849px;
+    transition: all .3s ease;
+}
+
+.doc-hov1:hover,.doc-hov2:hover,.doc-hov3:hover{
+    opacity: 1;
+    transition: all .3s ease;
+} */
+
+.doc-hov3{
+    /* bottom: -491px; */
+    bottom: 0;
+    right: 295px;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+
+.doc-hov2{
+    /* bottom: -476px; */
+    bottom: 0;
+    right: 547px;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+
+.doc-hov1{
+    /* bottom: -488px; */
+    bottom: 0;
+    right: 832px;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+
+.name{
+   opacity: 0;
+   transition: all .3s ease;
+}
+
+.doc-hov1:hover,.doc-hov2:hover,.doc-hov3:hover {
+    filter: grayscale(0%);
+    transition: all .3s ease;
+   
+}
+
+.doc-hov1:hover .name{
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.doc-hov2:hover .name{
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.doc-hov3:hover .name{
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.news-update-cont{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    @apply border-gray border-t-[1px] py-[4rem]
+}
+
+.contact-form{
+    @apply w-[467px]
+}
+
+.contact-form input, textarea{
+    @apply block border-[#D5D8DE] border-[1px] rounded-sm p-3 w-[100%] mb-[1rem]
+}
+
+
+.mission{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+}
+
+.doc-name{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+}
+
+.doc{
+    filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.25));
+    border-radius: 25px;
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+}
+
+.about-team-wrapper{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 3.5fr;
+}
+
+.tns-controls{
+    position: relative;
+}
+
+.tns-controls button:first-child{
+    position: absolute;
+    left: -2.8rem;
+    top: 5rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.tns-controls button:last-child{
+    position: absolute;
+    right: -2.8rem;
+    top: 5.5rem;
+    background: none;
+    border: none;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+
+
+.theFigure .item:nth-child(1) {
+    @apply absolute left-[50%] -bottom-[12px] -translate-x-[120%] -translate-y-0
+}
+
+.theFigure .item:nth-child(2) {
+    @apply absolute left-[50%] bottom-0 -translate-x-[45%] -translate-y-0
+}
+
+.theFigure .item:nth-child(3) {
+    @apply absolute left-[50%] -bottom-[17px] translate-x-[38%] -translate-y-0
+}
+
+
+.portraitItem{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.portraitItem.active {
+    @apply w-[900px] px-[2rem] transition-all duration-500
+}
+
+.portraitItem-name .theName{
+    transform: rotate(-90deg);
+    margin-top: 10rem;
+    width: 10rem;
+    @apply mx-auto
+}
+
+.portraitItem.active .portraitItem-name .theName {
+    transform: rotate(0);
+    margin-top: 0;
+    width: 400px;
+    margin-top: .5rem;
+}
+
+.portraitItem.active .portraitItem-name .desc {
+    @apply block
+}
